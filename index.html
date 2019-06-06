@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		h1 {
+			color: black
+		}
+		span{
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<div class="stopgame">
+	
+
+	
+	<img class="pole" src="pole.png" alt="" style="position: absolute; margin-top: 15%; height: 300px; margin-left: 30%;">
+
+
+	<div class="game" style="display: none"> <!--сеттинг-->
+		<img class="yakubovich" src="start.png" alt="" style="position: absolute; margin-left: 0%; height: 350px;  margin-top: 27%">
+		<h4 class="border p-1 text" style="margin-top: 30%;  position: absolute; ">"В эфире капитал шоу поле чудес! Вам нужно угадать слово"</h4>
+		<div class="col-6 mx-auto bg-warning text-center mt-5">
+			<h1>Этот струнный инструмент используют во многих стилях и направлениях музыки. Значительный вклад в музыкальную индустрию этот инструмент внес к середине 20 века.</h1>
+		</div>
+		<div class="col-6 mx-auto mt-5">
+			<div class="row">
+				<div class="border  word1 col-2 text-center" style=" background: black">
+					<h1 style="font-size: 100px; color: black;">Г</h1>
+				</div>
+				<div class="border  col-2  text-center word4" style=" background: black">
+					<h1 style="font-size: 100px">И</h1>
+				</div>
+				<div class="border  col-2  text-center word6" style=" background: black">
+					<h1 style="font-size: 100px">Т</h1>
+				</div>
+				<div class="border   col-2  text-center word2" style=" background: black">
+					<h1 style="font-size: 100px">А</h1>
+				</div>
+				<div class="border col-2 text-center word5" style=" background: black">
+					<h1 style="font-size: 100px">Р</h1>
+				</div>
+				<div class="border   col-2  text-center word3" style=" background: black">
+					<h1 style="font-size: 100px">А</h1>
+				</div>
+			</div>
+			<span class="bukva1">A</span>
+			<span class="ml-3 bukva2">Б</span>
+			<span class="ml-3 bukva3">В</span>
+			<span class="ml-3 bukva4">Г</span>
+			<span class="ml-3 bukva5">Д</span>		
+			<span class="ml-3 bukva6">Е</span>	
+			<span class="ml-3 bukva7">Ё</span>
+			<span class="ml-3 bukva8">Ж</span>
+			<span  class="ml-3 bukva9">З</span>
+			<span class="ml-3 bukva10">И</span>
+			<span class="ml-3 bukva11">Й</span>
+			<span class="ml-3 bukva12">К</span>
+			<span class="ml-3 bukva13">Л</span>
+			<span class="ml-3 bukva14">М</span>
+			<span class="ml-3 bukva15">Н</span>
+			<span class="ml-3 bukva16">О</span>
+			<span class="ml-3 bukva17">П</span>
+			<span class="ml-3 bukva18">Р</span>
+			<span class="ml-3 bukva19">С</span>
+			<span class="ml-3 bukva20">Т</span>
+			<span class="ml-3 bukva21">У</span>
+			<span class="ml-3 bukva22">Ф</span>
+			<span class="ml-3 bukva23">Х</span>
+			<span class="ml-3 bukva24">Ц</span>
+			<span class="ml-3 bukva25">Ч</span>
+			<span class="ml-3 bukva26">Ш</span>
+			<span class="ml-3 bukva27">Щ</span>
+			<span class="ml-3 bukva28">Ъ</span>
+			<span class="ml-3 bukva29">Ы</span>
+			<span class="ml-3 bukva30">Ь</span>
+			<span class="ml-3 bukva31">Э</span>
+			<span class="ml-3 bukva32">Ю</span>
+			<span class="ml-3 bukva33">Я</span>
+		
+		</div>
+	</div>
+	
+</div>
+
+	
+
+
+<script>
+	let gameStart = function() {
+		document.querySelector(".pole").style.display = "none"
+		document.querySelector(".game").style.display = "block"
+		document.querySelector(".yakubovich").style.display = "block"
+		document.querySelector(".text").style.display = "block"
+		document.querySelector(".text").style.display = "block"
+		document.querySelector(".timer").style.display = "block"
+		document.querySelector(".textTime").style.display = "block"
+
+	}
+
+	//setTimeout(gameStart, 2000); 
+
+
+	let text2 = function() {
+		document.querySelector(".text").innerHTML = ""
+	}
+	setTimeout(gameStart, 4000)
+
+
+	document.querySelector(".bukva1").onclick = function(){
+	 	alert('Верррррно!')
+		document.querySelector(".word2").style.background = "#0083ff";
+		document.querySelector(".word3").style.background = "#0083ff"; 
+	}
+	document.querySelector(".bukva4").onclick = function(){
+	 	alert('Верррррно!')
+		document.querySelector(".word1").style.background = "#0083ff";
+	}
+	document.querySelector(".bukva10").onclick = function(){
+	 	alert('Верррррно!')
+		document.querySelector(".word4").style.background = "#0083ff";
+	}
+	document.querySelector(".bukva18").onclick = function(){
+	 	alert('Верррррно!')
+		document.querySelector(".word5").style.background = "#0083ff";
+	}
+	document.querySelector(".bukva20").onclick = function(){
+	 	alert('Верррррно!')
+		document.querySelector(".word6").style.background = "#0083ff";
+	}
+	let error = function() {
+		alert("Не верно!")
+	}
+
+	document.querySelector(".bukva2").onclick = error
+	document.querySelector(".bukva3").onclick = error
+	document.querySelector(".bukva5").onclick = error
+	document.querySelector(".bukva6").onclick = error
+	document.querySelector(".bukva7").onclick = error
+	document.querySelector(".bukva8").onclick = error
+	document.querySelector(".bukva9").onclick = error
+	document.querySelector(".bukva11").onclick = error
+	document.querySelector(".bukva12").onclick = error
+	document.querySelector(".bukva13").onclick = error
+	document.querySelector(".bukva14").onclick = error
+	document.querySelector(".bukva15").onclick = error
+	document.querySelector(".bukva16").onclick = error
+	document.querySelector(".bukva17").onclick = error
+	document.querySelector(".bukva19").onclick = error
+	document.querySelector(".bukva21").onclick = error
+	document.querySelector(".bukva22").onclick = error
+	document.querySelector(".bukva23").onclick = error
+	document.querySelector(".bukva24").onclick = error
+	document.querySelector(".bukva25").onclick = error
+	document.querySelector(".bukva26").onclick = error
+	document.querySelector(".bukva27").onclick = error
+	document.querySelector(".bukva28").onclick = error
+	document.querySelector(".bukva29").onclick = error
+	document.querySelector(".bukva30").onclick = error
+	document.querySelector(".bukva31").onclick = error
+	document.querySelector(".bukva32").onclick = error
+	document.querySelector(".bukva33").onclick = error
+
+
+
+	/*let time = 32
+
+	let timer = function() {
+		time = time  - 1
+		document.querySelector(".timer").innerHTML = time
+	}
+	setInterval(timer,1000)*/
+
+/*
+	let stopgame = function() {
+
+		document.querySelector(".stopgame").style.display = "none"
+	}
+	setInterval(stopgame,32000)
+//таймер нового вопроса
+	let time2= 62 
+
+	let timer2 = function() {
+		time2 = time2 - 1
+		document.querySelector(".timer2").innerHTML = time2
+	}
+	setInterval(timer2,1000)
+
+	let start2vopros = function() {
+		document.querySelector(".timer2").style.display = "block"
+	}
+
+	setInterval(start2vopros,32000)*/
+
+</script>	
+</body>
+</html>
